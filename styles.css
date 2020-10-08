@@ -3,7 +3,6 @@
 body {
   margin: 0;
   background-color: rgba(250, 230, 210, 1);
-  animation: wallLighting 48s ease infinite;
 }
 
 footer {
@@ -26,22 +25,22 @@ iframe {
   left: -15px;
 }
 
-.lowfi {
-  top: -15px;
+.bey4 {
+  top: -14px;
   z-index: 99;
 }
 
-.cafe {
+.beyplat {
   top: 40px;
   z-index: 98;
 }
 
-.punk {
+.beylk {
   top: 95px;
   z-index: 97;
 }
 
-.fam {
+.beysf {
   top: 150px;
   z-index: 96;
 }
@@ -63,427 +62,6 @@ iframe {
       typewriter 8s steps(44) 1s 1 normal both,
       blinkTextCursor 500ms steps(44) infinite normal;
 }
-
-
-/* CHARACTER STYLING */
-
-.character {
-  padding: 0;
-  height: 21vw;
-  width: 21vw;
-  margin-left: 55vw;
-  margin-top: 28vh;
-  position: relative;
-  z-index: 1;
-}
-
-.person {
-  background: url('./img/bitmoji.png') no-repeat center center scroll;
-  background-color: rgba(250, 230, 210, 1);
-  background-size: contain;
-  border-radius: 50%;
-  height: 15em;
-  width: 15em;
-  margin: auto;
-  animation: 
-    headTilt 15s ease infinite,
-    wallLighting 48s ease infinite;
-}
-
-
-/* WINDOW STYLING */
-
-.window {
-  height: 22rem;
-  width: 21rem;
-  display: flex;
-  padding: 4px;
-  position: absolute;
-  left: 16vw;
-  top: 5vh;
-  background-color: rgba(175, 250, 250, 1);
-  animation: sunriseSunset 48s ease infinite;
-}
-
-.pane {
-  height: 91%;
-  width: 45%;
-}
-
-.window,
-.pane {
-  border: 1em solid rgba(150, 150, 150, 1);
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 10px 10px rgba(50,50,50,0.75);
-}
-
-
-/* COFFEE STYLING */
-
-.coffee {
-  height: 4.5em;
-  width: 4.5em;
-  position: absolute;
-  top: 58vh;
-  left: 45vw;
-  z-index: 2;
-}
-
-.coffee:before, 
-.coffee:after{
-  position: absolute;
-  display: block;
-}
-
-.coffee:before {
-  content: '';
-  box-sizing: border-box;
-  margin-left: 4em;
-  margin-top: 1.1em;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 10px 2px 40px 40px;
-  border: 3px solid #eee;
-  box-shadow: inset 0 0 0 3px gray, 0 0 0 8px white, 0 0 0 10px gray;
-}
-
-.coffee:after{
-  content: '';
-  width: 3em;
-  height: 3em;
-  border: 3px solid gray;
-  padding: 10px;
-  border-radius: 5px 5px 30px 30px;
-  background: 
-    linear-gradient(to right, white 50%, transparent 10%), 
-    linear-gradient(to left, #eee 30%, white 5px, white 35px, white 90px, transparent 10%);
-}
-
-.steam {
-  position: absolute;
-  height: 5em;
-  width: 5em;
-  border-radius: 50%;
-  background-color: #fff;
-  z-index: 0;
-  opacity: 0;
-}
-
-.one {
-  animation: steaming 4s ease-out infinite;
-}
-.two {
-  animation: steaming 4s ease-out .5s infinite;
-}
-.three {
-  animation: steaming 4s ease-out 1s infinite;
-}
-
-
-/* OTHER ITEMS STYLING */
-
-.laptop {
-  background: url('./img/laptop.png') no-repeat center center scroll;
-  background-color: rgba(250, 230, 210, 1);
-  animation: wallLighting 48s ease infinite;
-  background-size: cover;
-  border: 1px solid #9a9a9a;
-  border-radius: 10px;
-  box-shadow: 1px 2px 3px #9a9a9a;
-  height: 12em;
-  width: 18em;
-  margin: -7em auto;
-  position: relative;
-  z-index: 3;
-  animation: 
-    typing .5s linear infinite, 
-    laptopLight 48s ease infinite;
-}
-
-.desk {
-  background: url('./img/desk.png') no-repeat center center scroll;
-  background-color: rgba(250, 230, 210, 1);
-  animation: wallLighting 48s ease infinite;
-  background-size: contain;
-  width: 75rem;
-  height: 16rem;
-  position: absolute;
-  top: 65vh;
-  left: 25vw;
-}
-
-.lamp {
-  background-color: rgba(150, 150, 150, .5);
-  border: 1px solid rgba(150, 150, 150, 1);
-  border-radius: 50%;
-  height: 3vh;
-  width: 18em;
-  position: absolute;
-  top: -2vh;
-  left: 65vw;
-  animation: lampLight 48s ease infinite;
-}
-
-
-/* MOBILE RESPONSIVE-NESS */
-
-@media only screen and (max-width: 1000px) {
-  /* body {
-    border: 10px solid blue;
-  } */
-
-  .coffee {
-    left: 40vw;
-  }
-
-  .desk {
-    left: 10vw;
-  }
-
-  .window {
-    top: 3vh;
-    left: 6vw;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .coffee {
-    left: 35vw;
-  }
-
-  .desk {
-    left: 0;
-  }
-
-  .window {
-    height: 19rem;
-    width: 15rem;
-    padding: 1px;
-    left: 2vw;
-    top: 4vh;
-  }
-
-  .pane {
-    height: 93%;
-    width: 44%;
-  }
-
-  .window,
-  .pane {
-    border-width: .65em;
-    box-shadow: inset 0px 0px 5px 5px rgba(50,50,50,0.75);
-  }
-}
-
-
-/* ANIMATIONS */
-
-@keyframes headTilt {
-  0% {
-      transform: rotateZ(0deg);
-  }
-  20% {
-      transform: rotateZ(0deg);
-  }
-  25% {
-      transform: rotateZ(-4deg);
-  }
-  35% {
-      transform: rotateZ(-4deg);
-  }
-  40% {
-      transform: rotateZ(2deg);
-  }
-  45% {
-      transform: rotateZ(2deg);
-  }
-  50% {
-      transform: rotateZ(-4deg);
-  }
-  55% {
-      transform: rotateZ(0deg);
-  }
-  70% {
-      transform: rotateZ(0deg);
-  }
-  75% {
-      transform: rotateZ(4deg);
-  }
-  85% {
-      transform: rotateZ(4deg);
-  }
-  100% {
-      transform: rotateZ(0deg);
-  }
-}
-
-@keyframes typing {
-  0% {
-      transform: rotateZ(-.3deg);
-  }
-  50% {
-      transform: rotateZ(.3deg);
-  }
-  100% {
-      transform: rotateZ(-.3deg);
-  }
-}
-
-@keyframes sunriseSunset {
-  0% {
-    background-color: rgba(125, 225, 250, 1);
-  }
-  24% {
-    background-color: rgba(125, 225, 250, 1);
-  }
-  28% {
-    background-color: rgba(50, 150, 225, 1);
-  }
-  32% {
-    background-color: rgba(25, 75, 150, 1);
-  }
-  36% {
-    background-color: rgba(10, 25, 75, 1);
-  }
-  40% {
-    background-color: rgba(10, 10, 40, 1);
-  }
-  44% {
-    background-color: rgba(10, 10, 10, 1);
-  }
-  68% {
-    background-color: rgba(10, 10, 10, 1);
-  }
-  72% {
-    background-color: rgba(10, 10, 40, 1);
-  }
-  76% {
-    background-color: rgba(10, 25, 75, 1);
-  }
-  80% {
-    background-color: rgba(25, 75, 150, 1);
-  }
-  84% {
-    background-color: rgba(50, 150, 225, 1);
-  }
-  90% {
-    background-color: rgba(125, 225, 250, 1);
-  }
-  100% {
-    background-color: rgba(125, 225, 250, 1);
-  }
- }
-
-@keyframes laptopLight {
-  0% {
-    box-shadow: 1px 2px 3px #9a9a9a;
-  }
-  28% {
-    box-shadow: 1px 2px 3px #9a9a9a;
-  }
-  32% {
-    box-shadow: 0px -20px 30px -7px rgba(195,242,253,1);
-  }
-  80% {
-    box-shadow: 0px -20px 30px -7px rgba(195,242,253,1);
-  }
-  84% {
-    box-shadow: 1px 2px 3px #9a9a9a;
-  }
-  100% {
-    box-shadow: 1px 2px 3px #9a9a9a;
-  }
-}
-
-@keyframes lampLight {
-  0% {
-    background-color: rgba(150, 150, 150, .5);
-    border: 1px solid rgba(150, 150, 150, 1);
-    box-shadow: none;
-  }
-  28% {
-    background-color: rgba(150, 150, 150, .5);
-    border: 1px solid rgba(150, 150, 150, 1);
-    box-shadow: none;
-  }
-  32% {
-    background-color: rgba(255, 225, 150, .85);
-    border: 1px solid rgba(255, 225, 150, 1);
-    box-shadow: 0px 20px 80px 20px rgba(255,225,150,.9);
-  }
-  80% {
-    background-color: rgba(255, 225, 150, .85);
-    border: 1px solid rgba(255, 225, 150, 1);
-    box-shadow: 0px 20px 80px 20px rgba(255,225,150,.9);
-  }
-  84% {
-    background-color: rgba(150, 150, 150, .5);
-    border: 1px solid rgba(150, 150, 150, 1);
-    box-shadow: none;
-  }
-  100% {
-    background-color: rgba(150, 150, 150, .5);
-    border: 1px solid rgba(150, 150, 150, 1);
-    box-shadow: none;
-  }
-}
-
-@keyframes wallLighting {
-  0% {
-    background-color: rgba(250, 230, 210, 1);
-  }
-  24% {
-    background-color: rgba(250, 230, 210, 1);
-  }
-  28% {
-    background-color: rgba(225, 205, 185, 1);
-  }
-  32% {
-    background-color: rgba(175, 155, 135, 1);
-  }
-  36% {
-    background-color: rgba(125, 100, 85, 1);
-  }
-  40% {
-    background-color: rgba(50, 30, 20, 1);
-  }
-  44% {
-    background-color: rgba(35, 15, 5, 1);
-  }
-  68% {
-    background-color: rgba(35, 15, 5, 1);
-  }
-  72% {
-    background-color: rgba(50, 30, 20, 1);
-  }
-  76% {
-    background-color: rgba(125, 100, 85, 1);
-  }
-  80% {
-    background-color: rgba(175, 155, 135, 1);
-  }
-  84% {
-    background-color: rgba(225, 205, 185, 1);
-  }
-  90% {
-    background-color: rgba(250, 230, 210, 1);
-  }
-  100% {
-    background-color: rgba(250, 230, 210, 1);
-  }
-}
-
-@keyframes steaming {
-  0% {
-    transform: translateY(0) translateX(0) scale(0.25); 
-    opacity: 0.2;
-  }
-  100% {
-    transform: translateY(-5em) translateX(-1em) scale(1);
-    opacity: 0;
-  }
-}
-
 @keyframes typewriter{
   0% {
     width: 0;
@@ -509,3 +87,11 @@ iframe {
     border-right-color: transparent;
   }
 }
+
+
+
+
+
+
+
+
